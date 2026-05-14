@@ -1,37 +1,4 @@
-# Moriarti Procurement Service — Vercel + PostgreSQL
-
-Минимальный проект для ЛР №2.
-
-## Что нужно для деплоя
-
-1. Загрузить проект в GitHub.
-2. Импортировать репозиторий в Vercel.
-3. Создать внешнюю PostgreSQL базу данных у любого провайдера.
-4. В Vercel добавить переменную окружения `DATABASE_URL`.
-5. Запустить Deploy.
-
-## Структура проекта
-
-- `app.py` — Flask-приложение и API
-- `templates/index.html` — HTML-интерфейс
-- `requirements.txt` — зависимости
-
-## Переменная окружения
-
-Нужно указать:
-
-```text
-DATABASE_URL=postgresql://USER:PASSWORD@HOST:PORT/DBNAME?sslmode=require
-```
-
-Если провайдер выдает строку `postgres://...`, приложение автоматически преобразует ее в формат SQLAlchemy.
-
-## Маршруты
-
-- `/` — HTML-интерфейс
-- `/health` — проверка состояния сервиса
-- `/requests` — заявки на закупку
-- `/inventory` — складские остатки
+# Moriarti Procurement Service — Render + PostgreSQL
 
 ## Что умеет сервис
 
@@ -39,4 +6,3 @@ DATABASE_URL=postgresql://USER:PASSWORD@HOST:PORT/DBNAME?sslmode=require
 - создание, просмотр, редактирование и удаление складских позиций
 - работа с внешней PostgreSQL базой данных
 - автоматическое создание таблиц при первом запуске
-# moriarti-vercel
